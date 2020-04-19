@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Search</title>
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(40deg, #9df7d1, #13e57c);
+        }
+
+        .search_box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #333;
+            height: 40px;
+            border-radius: 40px;
+            padding: 10px;
+        }
+        .search_box:hover .search_text{
+            width: 240px;            
+        }
+
+        .search_btn {
+            color: #ffffff;
+            float: right;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            outline: none;
+            background: none;
+        }
+        .search_text{
+            border: none;
+            outline: none;
+            background: none;
+            float: left;
+            padding: 0;
+            color: #fff;
+            font-size: 1rem;
+            line-height: 40px;
+            /* width: 240px; */
+            width: 0px;
+            transition: .4s;
+        }
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="search_box">
+        <input type="text" class="search_text" placeholder="Type To Search">
+        <button type="submit" class="search_btn"><i class="fas fa-search"></i></button>
+    </div>
+</body>
+
+</html>
